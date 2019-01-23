@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ],
+    "@babel/plugin-transform-classes",
+    "@babel/plugin-proposal-object-rest-spread",
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "pragma": "React.createElement"
+      }
+    ]
+  ]
+}

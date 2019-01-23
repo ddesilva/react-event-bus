@@ -1,0 +1,35 @@
+{
+  "globals": {
+    "require": true,
+    "process": true,
+    "__dirname": true,
+    "module": true
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended",  "plugin:react/recommended",  "prettier"],
+  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 100 }],
+    "indent": 0,
+    "strict": 0,
+    "semi": ["error", "always"],
+    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "no-console": ["error"],
+    "eqeqeq": ["warn", "always"],
+    "no-var": ["error"],
+    "react/no-unused-prop-types": "error"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  }
+}

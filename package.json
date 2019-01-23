@@ -1,0 +1,53 @@
+{
+  "name": "react-event-bus",
+  "version": "1.0.0",
+  "description": "Cross component comms using a pub/sub pattern",
+  "main": "./dist/index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist --copy-files",
+    "clean": "rm -rf ./dist",
+    "lint": "eslint ./src",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddesilva/react-event-bus.git"
+  },
+  "keywords": [
+    "react",
+    "context",
+    "eventbus"
+  ],
+  "author": "Dilshan de Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddesilva/react-event-bus/issues"
+  },
+  "homepage": "https://github.com/ddesilva/react-event-bus#readme",
+  "peerDependencies": {
+    "react": "16.x",
+    "react-dom": "16.x",
+    "prop-types": "15.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.x",
+    "@babel/core": "^7.2.x",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.x",
+    "@babel/plugin-transform-classes": "^7.2.x",
+    "@babel/plugin-transform-react-jsx": "^7.2.x",
+    "@babel/plugin-transform-runtime": "^7.2.x",
+    "@babel/preset-env": "^7.2.x",
+    "babel-eslint": "^10.0.x",
+    "eslint": "^5.12.x",
+    "eslint-config-prettier": "^3.6.x",
+    "eslint-plugin-prettier": "^3.0.x",
+    "eslint-plugin-react": "^7.12.x",
+    "prettier": "^1.15.x",
+    "prop-types": "15.x",
+    "react": "16.x",
+    "react-dom": "16.x"
+  }
+}

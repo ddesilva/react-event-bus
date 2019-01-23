@@ -1,0 +1,11 @@
+dist
+node_modules
+.DS_STORE
+/.idea/workspace.xml
+.npm
+.atom
+.idea
+.tern-project
+.vscode
+.history
+.watchmanconfig
