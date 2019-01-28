@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import withEvents from "../src/withEvents";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import withEvents from '../src/withEvents';
 
 class ComponentOne extends Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class ComponentOne extends Component {
   }
 
   onChange = event => {
-    const someEvent = new CustomEvent("some-event-key", {
+    const someEvent = new CustomEvent('some-event-key', {
       detail: { someValue: event.target.value }
     });
     this.props.EventBus.dispatchEvent(someEvent);

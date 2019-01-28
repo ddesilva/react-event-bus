@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import withEvents from '../src/withEvents';
 
 class ComponentTwo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      someValue: ""
+      someValue: ''
     };
-    this.props.EventBus.addEventListener("some-event-key", event => {
+    this.props.EventBus.addEventListener('some-event-key', event => {
       this.setState({ someValue: event.detail.someValue });
     });
   }

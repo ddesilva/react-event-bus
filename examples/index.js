@@ -1,9 +1,9 @@
-import React from "react";
-import { render } from "react-dom";
-import EventProvider from "../src/EventProvider";
-import ComponentOne from "./ComponentOne";
-import ComponentTwo from "./ComponentTwo";
-import ComponentThree from "./ComponentThree";
+import React from 'react';
+import { render } from 'react-dom';
+import EventProvider from '../src/EventProvider';
+import ComponentOne from './ComponentOne';
+import ComponentTwo from './ComponentTwo';
+import ComponentThree from './ComponentThree';
 
 const App = () => (
   <EventProvider>
@@ -14,4 +14,4 @@ const App = () => (
   </EventProvider>
 );
 
-render(<App />, document.getElementById("app"));
+render(<App />, document.getElementById('app'));
