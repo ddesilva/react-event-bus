@@ -2,23 +2,19 @@
   "name": "parcel-sandbox",
   "version": "1.0.0",
   "description": "Simple Parcel Sandbox",
-  "main": "index.html",
+  "source": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "start": "parcel index.html --open --no-cache"
   },
   "dependencies": {
-    "babel": "6.23.0",
-    "babel-plugin-transform-class-properties": "6.24.1 - latest",
-    "prop-types": "15.6.2",
-    "react": "16.8.0-alpha.0",
-    "react-dom": "16.8.0-alpha.0"
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/@babel": "latest",
-    "@types/prop-types": "15.5.8",
-    "@types/react": "16.7.18",
-    "@types/react-dom": "16.0.11",
-    "parcel-bundler": "^1.6.1"
+    "parcel": "^2.5.0"
   }
 }
